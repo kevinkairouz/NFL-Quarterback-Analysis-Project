@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt  
 
 
 lineSettings1 = dict(marker = "o", markersize = 10, color = "red", linewidth = 4, linestyle = "dashed") 
@@ -7,18 +7,21 @@ lineSettings3 = dict(marker = "v", markersize = 10, color = "blue", linewidth = 
 lineSettings4 = dict(marker = "o", markersize = 10, color = "green", linewidth = 4, linestyle = "dashed") 
 
 years = [2020, 2021, 2022, 2023, 2024] 
-mahomesTouchdowns = [38, 37, 41, 27, 26] 
-lamarTouchdowns = [26, 16, 17, 24, 41] 
-allenTouchdowns = [37, 36, 35, 29, 28] 
-rodgersTouchdowns = [48, 37, 26, 0, 28]  
+mahomesInt = [6, 13, 12, 14, 11] 
+jacksonInt = [9, 13, 7, 7, 4] 
+allenInt = [10, 15, 14, 18, 6]  
+rodgersInt = [5, 4, 12, 0, 11] 
 
+plt.plot(years, mahomesInt, **lineSettings1) 
+plt.plot(years, jacksonInt, **lineSettings2) 
+plt.plot(years, allenInt, **lineSettings3) 
+plt.plot(years, rodgersInt, **lineSettings4)   
 
-plt.plot(years, mahomesTouchdowns, **lineSettings1) 
-plt.plot(years, lamarTouchdowns, **lineSettings2) 
-plt.plot(years, allenTouchdowns, **lineSettings3) 
-plt.plot(years, rodgersTouchdowns, **lineSettings4)
+plt.xticks(years)  
+plt.title("NFL Quarterback Interception (2020 - 2024)") 
+plt.grid(axis = "x") 
 plt.legend(["Patrick Mahomes", "Lamar Jackson", "Josh Allen", "Aaron Rodgers"])
-plt.title("NFL QB Touchdowns (2020-2024)") 
 plt.xlabel("Year") 
-plt.ylabel("Touchdowns")
+plt.ylabel("Interceptions")
+
 plt.show() 
