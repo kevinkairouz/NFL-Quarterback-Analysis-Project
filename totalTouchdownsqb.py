@@ -12,6 +12,6 @@ rodgersTouchdowns = [48, 37, 26, 0, 28]
 
 totalTouchdownsthrown = [sum(mahomesTouchdowns), sum(lamarTouchdowns), sum(allenTouchdowns), sum(rodgersTouchdowns)] 
 
-plt.pie(totalTouchdownsthrown, colors=["red", "purple", "blue", "green"])  
-plt.legend(["Patrick Mahomes", "Lamar Jackson", "Josh Allen", "Aaron Rodgers"])
+plt.pie(totalTouchdownsthrown, colors=["red", "purple", "blue", "green"], labels= quarterbacks)  
+plt.legend(["Patrick Mahomes", "Lamar Jackson", "Josh Allen", "Aaron Rodgers"]) 
 plt.show()
