@@ -4,6 +4,7 @@ quarterbacks = ["Patrick Mahomes", "Lamar Jackson", "Josh Allen", "Aaron Rodgers
 plt.title("Touchdowns thrown from 2020 - 2024")  
 
 
+#2020-2024
 mahomesTouchdowns = [38, 37, 41, 27, 26] 
 lamarTouchdowns = [26, 16, 17, 24, 41] 
 allenTouchdowns = [37, 36, 35, 29, 28] 
