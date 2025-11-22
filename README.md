@@ -1,6 +1,6 @@
-# NFL QB Completion Percentage Analysis
+# NFL QB Analysis Projet
 
-A Python data visualization project tracking the completion percentages of four elite NFL quarterbacks over a five-year period (2020-2024).
+A Python data visualization project tracking the completion percentages, touchdowns, and wins of four elite NFL quarterbacks.
 
 ## Overview
 
@@ -13,9 +13,11 @@ This project analyzes and visualizes the passing accuracy trends of four promine
 ## Features
 
 - Line graph visualization with distinct styling for each quarterback
-- Year-by-year completion percentage tracking (2020-2024)
+- Year-by-year completion percentage tracking, and touchdown tracking (2020-2024)
 - Custom markers and colors for easy player identification
 - Grid lines for improved readability
+- All time Wins
+  
 
 ## Data Source
 
